@@ -65,3 +65,6 @@ stack build
 
 stack exec project-name-exe
 
+# Note
+Use with care :) I did not handle the characters other than braces, square brackets and curly brackets 
+
