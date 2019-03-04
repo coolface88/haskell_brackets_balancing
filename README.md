@@ -33,21 +33,3 @@ stack build
 
 stack exec balanced-parenthesis-exe
 
-
-Ex output: 
-
-Solution 1:
-
-Please enter your parentheses string
-
-()()
-
-Balanced "()()"
-
-Solution 2:
-
-Please enter your string
-
-()()((()()))[][](((())())()){{{}{}}}{[]{[]{[]}}}()(){{{}{}{}}}{{{[]}[]}[]}()(){}{{}}
-
-"()()((()()))[][](((())())())((()())){[]{[]{[]}}}()()((()()())){{{[]}[]}[]}()(){}(()){{}}"
