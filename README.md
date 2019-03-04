@@ -47,6 +47,19 @@ Software contracts, schedules, and delverables are notoriously difficult communi
     
 Do not need to implement all or any of the functions needed to construct or evaluate the dsl:  The goal is to develop the type semantics necessary to cover all needed states and provide a type-signiture or equivalent with an inline comment describing the logic.
 
+# Solution overview
+
+1) Implement a pushdown automata using stack data structure.
+ - On encountering an open braces, open bracket or open square bracket push them on the stack
+ - On encountering a closing corresponding ones  pop them off the stack 
+ - If attempt to pop an empty stack, reject 
+ - If stack not empty at the end, reject
+ - Else accept
+
+2) I will model the solution with a finite state machine
+ - Define a state set regarding the contract terms and conditions
+ - The FSM associates with a monoidal structure, I would consider to make it as a monoid instance so we have a free append function.
+
 # Build and exec
 stack build
 
